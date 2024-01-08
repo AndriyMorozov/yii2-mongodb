@@ -615,7 +615,7 @@ class Command extends BaseObject
                 $options['skip'] = (int)$options['skip'];
             }
         }
-
+        $options ['collation']['locale'] = 'uk';
         return $this->query($collectionName, $options, $execOptions);
     }
 
